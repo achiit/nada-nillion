@@ -6,7 +6,8 @@ def nada_main():
     my_int1 = SecretInteger(Input(name="my_int1", party=party1))
     my_int2 = SecretInteger(Input(name="my_int2", party=party1))
 
-    # write the computation for your program here - use my_int1 and my_int2 as inputs
-    # make sure you change the output below to be your new output
+    # Perform addition on the secret integers
+    sum_ints = my_int1 + my_int2
 
-    return [Output(my_int1, "my_output", party1)]
+    # Output the result of the addition
+    return [Output(sum_ints, "sum_output", party1)]
